@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 public class TestController {
     private Logger logger = Logger.getLogger(TestController.class);
     @Resource
-    private IUserService userService;
+    private IUserService userService;//userService实现类的@Service("userService")  @Resource和@Repository配对使用 生成实例
 
     @ResponseBody
     @RequestMapping("/test")
